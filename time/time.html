@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class = "co">
+           <h1> hi how are you <h1>
+           current time is <span id = "time"></span>
+        </div>
+        
+        <script>
+          let now = new Date();
+          console.log(now);
+
+
+          let dt = new Date(1000);
+          console.log(dt);
+          
+          let newDate = new Date(2039,4,6,9,3,45,6);
+          console.log(newDate);
+
+
+          let yr = newDate.getFullYear();
+          console.log("the year is :",yr);
+
+          let dp = newDate.getDate();
+          console.log("the year is:",dp);
+
+
+          newDate.setDate(24);
+          console.log(newDate);
+
+          setInterval(updateTime, 1000);
+          function updateTime(){
+            time.innerHTML = new Date();
+          }
+        </script>
+    </body>
+</html>
